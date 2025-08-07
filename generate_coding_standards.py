@@ -11,6 +11,10 @@ from pathlib import Path
 
 CONTENT_TEMPLATE = """# Coding & Architecture Standards
 
+## Design Principles
+- Favor object-oriented, class-based design to encapsulate behavior and data.
+- Ensure each class, module, and function has a single responsibility (Single Responsibility Principle).
+
 ## Project Structure
 - Use modular design with clear separation of concerns.
 - Keep configuration, source, tests, and documentation in dedicated folders.
@@ -19,7 +23,7 @@ CONTENT_TEMPLATE = """# Coding & Architecture Standards
 ## Code Quality
 - Follow language-specific style guides (PEP 8 for Python, etc.).
 - Enforce linters and formatters in the development workflow.
-- Keep functions small and focused.
+- Keep functions and methods small and focused.
 
 ## Testing
 - Maintain unit tests for critical functionality.
@@ -43,8 +47,12 @@ CONTENT_TEMPLATE = """# Coding & Architecture Standards
 
 def main() -> None:
     base_path = Path('.')
-    repositories = [d for d in base_path.iterdir()
-                    if d.is_dir() and not d.name.startswith('.') and d.name != '.git']
+    repositories = [
+        d for d in base_path.iterdir()
+        if d.is_dir()
+        and not d.name.startswith('.')
+        and not d.name.startswith('__')
+    ]
 
     date = datetime.now().strftime('%Y-%m-%d')
     for repo in repositories:

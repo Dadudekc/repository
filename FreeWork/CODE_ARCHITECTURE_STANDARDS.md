@@ -1,5 +1,9 @@
 # Coding & Architecture Standards
 
+## Design Principles
+- Favor object-oriented, class-based design to encapsulate behavior and data.
+- Ensure each class, module, and function has a single responsibility (Single Responsibility Principle).
+
 ## Project Structure
 - Use modular design with clear separation of concerns.
 - Keep configuration, source, tests, and documentation in dedicated folders.
@@ -8,7 +12,7 @@
 ## Code Quality
 - Follow language-specific style guides (PEP 8 for Python, etc.).
 - Enforce linters and formatters in the development workflow.
-- Keep functions small and focused.
+- Keep functions and methods small and focused.
 
 ## Testing
 - Maintain unit tests for critical functionality.
