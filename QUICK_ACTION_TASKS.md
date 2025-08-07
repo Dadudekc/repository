@@ -24,7 +24,7 @@ for dir in */; do echo "$dir: $(find $dir -type f | wc -l) files"; done
 
 ### Week 1: Investigation
 - [x] Assess all project implementations (audit complete; two projects contain substantive code)
-- [ ] Review repository for obsolete directories
+- [x] Review repository for obsolete directories (34 placeholder directories identified)
 
 ### Week 2: Consolidation Assessment
 - [ ] Assess overlap between trading bot projects
