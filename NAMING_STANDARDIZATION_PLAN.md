@@ -61,7 +61,7 @@ Convert all repository names to **kebab-case** for consistency and professional 
 |--------------|---------------|----------|----------|--------|
 | `basicbot` | `basic-bot` | Development | Medium | 🔄 Ready |
 | `content` | `content` | Content | Low | ✅ Already kebab-case |
-| `ideas` | `project-ideas` | Development | Medium | 🔄 Ready |
+| `ideas` | `project-ideas` | Development | Medium | ✅ Completed |
 | `practice` | `practice-projects` | Development | Low | 🔄 Ready |
 | `projectscanner` | `project-scanner` | Development | Medium | 🔄 Ready |
 | `network-scanner` | `network-scanner` | Development | Medium | ✅ Already kebab-case |
