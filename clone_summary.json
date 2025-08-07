@@ -1,0 +1,321 @@
+{
+  "timestamp": "2025-08-06 12:29:36",
+  "total_repositories": 52,
+  "successful_clones": 50,
+  "failed_clones": 2,
+  "clone_base_path": "D:\\repositories",
+  "repositories": [
+    {
+      "name": "basicbot",
+      "full_name": "Dadudekc/basicbot",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "DigitalDreamscape",
+      "full_name": "Dadudekc/DigitalDreamscape",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "Dreamos",
+      "full_name": "Dadudekc/Dreamos",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "DreamVault",
+      "full_name": "Dadudekc/DreamVault",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "FocusForge",
+      "full_name": "Dadudekc/FocusForge",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "gpt_automation",
+      "full_name": "Dadudekc/gpt_automation",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "HCshinobi",
+      "full_name": "Dadudekc/HCshinobi",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "Hive-Mind",
+      "full_name": "Dadudekc/Hive-Mind",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "IT_help_desk",
+      "full_name": "Dadudekc/IT_help_desk",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "LSTMmodel_trainer",
+      "full_name": "Dadudekc/LSTMmodel_trainer",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "MeTuber",
+      "full_name": "Dadudekc/MeTuber",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "network-scanner",
+      "full_name": "Dadudekc/network-scanner",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "projectscanner",
+      "full_name": "Dadudekc/projectscanner",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "prompt-library",
+      "full_name": "Dadudekc/prompt-library",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "Side-projects",
+      "full_name": "Dadudekc/Side-projects",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "socialmediamanager",
+      "full_name": "Dadudekc/socialmediamanager",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "tbow-tactics",
+      "full_name": "Dadudekc/tbow-tactics",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "trading-leads-bot",
+      "full_name": "Dadudekc/trading-leads-bot",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "TROOP",
+      "full_name": "Dadudekc/TROOP",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "Victoros",
+      "full_name": "Dadudekc/Victoros",
+      "owner": "Dadudekc",
+      "private": false
+    },
+    {
+      "name": "agentproject",
+      "full_name": "Dadudekc/agentproject",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "AI_Debugger_Assistant",
+      "full_name": "Dadudekc/AI_Debugger_Assistant",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "bolt-project",
+      "full_name": "Dadudekc/bolt-project",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "content",
+      "full_name": "Dadudekc/content",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "DaDudekC",
+      "full_name": "Dadudekc/DaDudekC",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "DaDudeKC-Website",
+      "full_name": "Dadudekc/DaDudeKC-Website",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "FreeRideInvestor",
+      "full_name": "Dadudekc/FreeRideInvestor",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "FreeWork",
+      "full_name": "Dadudekc/FreeWork",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "ideas",
+      "full_name": "Dadudekc/ideas",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "machinelearningmodelmaker",
+      "full_name": "Dadudekc/machinelearningmodelmaker",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "machinelearningproject",
+      "full_name": "Dadudekc/machinelearningproject",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "my-personal-templates",
+      "full_name": "Dadudekc/my-personal-templates",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "my-resume",
+      "full_name": "Dadudekc/my-resume",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "NewSims4ModProject",
+      "full_name": "Dadudekc/NewSims4ModProject",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "osrsAIagent",
+      "full_name": "Dadudekc/osrsAIagent",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "osrsbot",
+      "full_name": "Dadudekc/osrsbot",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "practice",
+      "full_name": "Dadudekc/practice",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "Resume-Showcase",
+      "full_name": "Dadudekc/Resume-Showcase",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "self-evolving-ai",
+      "full_name": "Dadudekc/self-evolving-ai",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "SmartStock-pro",
+      "full_name": "Dadudekc/SmartStock-pro",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "TradingRobotPlug",
+      "full_name": "Dadudekc/TradingRobotPlug",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "TradingRobotPlugWeb",
+      "full_name": "Dadudekc/TradingRobotPlugWeb",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "TRPlugLibrary",
+      "full_name": "Dadudekc/TRPlugLibrary",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "UltimateOptionsTradingRobot",
+      "full_name": "Dadudekc/UltimateOptionsTradingRobot",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "ultimate_trading_intelligence",
+      "full_name": "Dadudekc/ultimate_trading_intelligence",
+      "owner": "Dadudekc",
+      "private": true
+    },
+    {
+      "name": "All-files-everything-",
+      "full_name": "Datgurll/All-files-everything-",
+      "owner": "Datgurll",
+      "private": false
+    },
+    {
+      "name": "Email-Cleanup-App",
+      "full_name": "PauGCO/Email-Cleanup-App",
+      "owner": "PauGCO",
+      "private": true
+    },
+    {
+      "name": "Auot_BLOGGER",
+      "full_name": "QuianaSampson/Auot_BLOGGER",
+      "owner": "QuianaSampson",
+      "private": true
+    },
+    {
+      "name": "Auto_Blogger",
+      "full_name": "QuianaSampson/Auto_Blogger",
+      "owner": "QuianaSampson",
+      "private": true
+    },
+    {
+      "name": "NightShift",
+      "full_name": "QuianaSampson/NightShift",
+      "owner": "QuianaSampson",
+      "private": true
+    },
+    {
+      "name": "Sims4ModUpdaters",
+      "full_name": "QuianaSampson/Sims4ModUpdaters",
+      "owner": "QuianaSampson",
+      "private": true
+    },
+    {
+      "name": "TradingRobotPlugWebTheme",
+      "full_name": "QuianaSampson/TradingRobotPlugWebTheme",
+      "owner": "QuianaSampson",
+      "private": true
+    }
+  ]
+}
