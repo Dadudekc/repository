@@ -1,0 +1,16 @@
+project: trading-platform
+modules:
+  - core-engine
+  - plugins
+  - analytics
+  - web-ui
+  - lead-generation
+reconnaissance:
+  - Inventory trading assets and align with modules
+  - Collect dependencies and credentials
+  - Review code quality against standards
+deliverables:
+  - Module overview and architecture diagram
+  - API reference and examples
+  - Environment setup guide
+  - Contact list

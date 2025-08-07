@@ -1,0 +1,21 @@
+<onboarding>
+  <project>trading-platform</project>
+  <modules>
+    <module>core-engine</module>
+    <module>plugins</module>
+    <module>analytics</module>
+    <module>web-ui</module>
+    <module>lead-generation</module>
+  </modules>
+  <reconnaissance>
+    <step>Inventory trading assets and align with modules</step>
+    <step>Collect dependencies and credentials</step>
+    <step>Review code quality against standards</step>
+  </reconnaissance>
+  <deliverables>
+    <item>Module overview and architecture diagram</item>
+    <item>API reference and examples</item>
+    <item>Environment setup guide</item>
+    <item>Contact list</item>
+  </deliverables>
+</onboarding>
