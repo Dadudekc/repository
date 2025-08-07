@@ -1,0 +1,53 @@
+project: trading-platform
+overview: >
+  Consolidated trading monorepo with core engine, plugins, analytics, web UI,
+  and lead generation modules.
+modules:
+  - name: trading-robot-plug
+    path: core/trading-robot-plug
+    description: Core trading engine powering plugin system
+    recon:
+      - Review architecture and plugin hooks
+      - Record dependencies
+  - name: tr-plug-library
+    path: core/tr-plug-library
+    description: Shared utilities for trading plugins
+    recon:
+      - Audit helper functions
+      - List external libraries
+  - name: free-ride-investor
+    path: plugins/free-ride-investor
+    description: Legacy plugin for free ride investing strategies
+    recon:
+      - Summarize strategy logic
+      - Identify integration needs
+  - name: smart-stock-pro
+    path: plugins/smart-stock-pro
+    description: Stock analysis plugin
+    recon:
+      - Document ML models
+      - Check data requirements
+  - name: ultimate-options-trading-robot
+    path: plugins/ultimate-options-trading-robot
+    description: Options trading strategies plugin
+    recon:
+      - Review options strategy modules
+      - Ensure plugin compatibility
+  - name: ultimate-trading-intelligence
+    path: analytics/ultimate-trading-intelligence
+    description: Analytics and AI components
+    recon:
+      - Map analytics pipeline
+      - Record model training scripts
+  - name: trading-leads-bot
+    path: lead-generation/trading-leads-bot
+    description: Lead generation bot
+    recon:
+      - Review outbound messaging
+      - Check compliance features
+  - name: trading-robot-plug-web
+    path: web-ui/trading-robot-plug-web
+    description: Web interface for configuring and monitoring trading bots
+    recon:
+      - Inventory UI views
+      - Document API endpoints

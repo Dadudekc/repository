@@ -1,8 +1,10 @@
 # Coding & Architecture Standards
 
+These standards apply across the consolidated trading platform.
+
 ## Project Structure
 - Use modular design with clear separation of concerns.
-- Keep configuration, source, tests, and documentation in dedicated folders.
+- Place configuration, source, tests, and documentation in dedicated folders.
 - Minimize duplication through reusable components and libraries.
 
 ## Code Quality

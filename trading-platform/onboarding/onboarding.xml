@@ -1,0 +1,78 @@
+<onboarding>
+  <project>trading-platform</project>
+  <overview>Consolidated trading monorepo with core engine, plugins, analytics, web UI, and lead generation modules.</overview>
+  <modules>
+    <module>
+      <name>trading-robot-plug</name>
+      <path>core/trading-robot-plug</path>
+      <description>Core trading engine powering plugin system</description>
+      <recon>
+        <step>Review architecture and plugin hooks</step>
+        <step>Record dependencies</step>
+      </recon>
+    </module>
+    <module>
+      <name>tr-plug-library</name>
+      <path>core/tr-plug-library</path>
+      <description>Shared utilities for trading plugins</description>
+      <recon>
+        <step>Audit helper functions</step>
+        <step>List external libraries</step>
+      </recon>
+    </module>
+    <module>
+      <name>free-ride-investor</name>
+      <path>plugins/free-ride-investor</path>
+      <description>Legacy plugin for free ride investing strategies</description>
+      <recon>
+        <step>Summarize strategy logic</step>
+        <step>Identify integration needs</step>
+      </recon>
+    </module>
+    <module>
+      <name>smart-stock-pro</name>
+      <path>plugins/smart-stock-pro</path>
+      <description>Stock analysis plugin</description>
+      <recon>
+        <step>Document ML models</step>
+        <step>Check data requirements</step>
+      </recon>
+    </module>
+    <module>
+      <name>ultimate-options-trading-robot</name>
+      <path>plugins/ultimate-options-trading-robot</path>
+      <description>Options trading strategies plugin</description>
+      <recon>
+        <step>Review options strategy modules</step>
+        <step>Ensure plugin compatibility</step>
+      </recon>
+    </module>
+    <module>
+      <name>ultimate-trading-intelligence</name>
+      <path>analytics/ultimate-trading-intelligence</path>
+      <description>Analytics and AI components</description>
+      <recon>
+        <step>Map analytics pipeline</step>
+        <step>Record model training scripts</step>
+      </recon>
+    </module>
+    <module>
+      <name>trading-leads-bot</name>
+      <path>lead-generation/trading-leads-bot</path>
+      <description>Lead generation bot</description>
+      <recon>
+        <step>Review outbound messaging</step>
+        <step>Check compliance features</step>
+      </recon>
+    </module>
+    <module>
+      <name>trading-robot-plug-web</name>
+      <path>web-ui/trading-robot-plug-web</path>
+      <description>Web interface for configuring and monitoring trading bots</description>
+      <recon>
+        <step>Inventory UI views</step>
+        <step>Document API endpoints</step>
+      </recon>
+    </module>
+  </modules>
+</onboarding>
