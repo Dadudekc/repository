@@ -4,7 +4,7 @@
 
 **Repository**: `QuianaSampson`  
 **Category**: Other  
-**Project Type**: Python  
+**Project Type**: Unknown  
 **Priority**: Low  
 **Status**: 📋 Beta Preparation  
 **Last Updated**: 2025-08-07
