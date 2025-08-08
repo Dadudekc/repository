@@ -19,3 +19,8 @@ Modular framework for building and deploying trading tools.
 
 ## Status
 Project skeleton with initial environment scaffolding.
+
+## Progress
+- Added `pytest` to requirements and created a basic import test for `pandas`, `numpy`, and `yfinance`.
+- Initial tests pass once dependencies are installed.
+- Future consolidation: migrate strategy modules from `tbow-tactics` and machine learning utilities from `machine-learning-model-maker` into `core-engine`.

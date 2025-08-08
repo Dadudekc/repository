@@ -4,6 +4,11 @@
 
 This unified workspace consolidates all your projects into a single development environment, eliminating the constant battle with environment setup and allowing you to work seamlessly across all your codebases.
 
+## Status
+Migration tool in place with basic import test. Full dependency installation pending; large ML frameworks like TensorFlow and Torch are not installed by default.
+
+Planned consolidation: shared data utilities from `Datgurll` and `machine-learning-project` will migrate into `shared/` modules.
+
 ## 🎯 **Why This Workspace?**
 
 - ✅ **Single Environment**: One Python environment for all projects
