@@ -35,11 +35,39 @@
 - [ ] Continue environment setup and core feature work on prioritized repositories
 - [ ] Start basic testing on completed features
 - [ ] Document progress
+- [ ] Assess overlap between trading bot projects
+- [ ] Assess overlap between data management projects
+- [ ] Create consolidation plans as needed
+- [ ] Update documentation after consolidation assessment
 
 ### **🎯 This Month**
 - [ ] Expand setup and testing across additional repositories
 - [ ] Plan security reviews and performance optimization
 - [ ] Initiate deployment and community engagement plans
+- [ ] Standardize repository naming conventions
+- [ ] Audit projects for missing dependencies and add requirements files
+- [ ] Apply a standard project structure across repositories
+- [ ] Enhance documentation with CONTRIBUTING guides, API docs, and troubleshooting
+- [ ] Improve code quality (gitignore, formatting, type hints, error handling)
+- [ ] Establish basic tests and CI/CD configuration templates
+
+## 🗂 **Repository-Specific Tasks**
+
+### Trading Platform
+- Inventory existing trading bots and align them with core engine, plugin, analytics, web UI, and lead generation modules
+- Document external dependencies, credentials, and data feeds for each module
+- Evaluate current code quality and identify gaps against shared standards
+- Integrate core engine interfaces with plugin loading and execution
+- Implement analytics pipelines for performance metrics and alerting
+- Build web UI components and API endpoints for real-time interaction
+- Connect lead generation tools to CRM or outreach workflows
+- Prepare architecture diagram, API reference, environment setup guide, and contact list for handoff
+
+### gpt-automation
+- Automate environment setup, develop core features, and create documentation
+
+### unified-workspace
+- Automate environment setup, develop core features, and create documentation
 
 ## 🛠️ **Development Standards**
 
