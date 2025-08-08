@@ -1,0 +1,7 @@
+# Shared Python dependencies
+openai>=1.0.0
+langchain>=0.0.300
+pandas>=2.0.0
+numpy>=1.24.0
+yfinance>=0.2.18
+pytest>=7.0

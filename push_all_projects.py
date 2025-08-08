@@ -16,6 +16,8 @@ import json
 from pathlib import Path
 from datetime import datetime
 
+from workspace_utils import get_project_directories, detect_project_type
+
 class ProjectManager:
     def __init__(self, base_path="."):
         self.base_path = Path(base_path)
@@ -25,37 +27,19 @@ class ProjectManager:
     def scan_projects(self):
         """Scan for all project directories"""
         projects = []
-        for item in self.base_path.iterdir():
-            if item.is_dir() and not item.name.startswith('.') and item.name != '.git':
-                # Skip backup and system directories
-                if not any(skip in item.name.lower() for skip in ['backup', 'node_modules', 'venv', 'env']):
-                    projects.append({
-                        'name': item.name,
-                        'path': item,
-                        'type': self.detect_project_type(item),
-                        'has_git': (item / '.git').exists(),
-                        'has_task_list': (item / 'TASK_LIST.md').exists()
-                    })
+        for item in get_project_directories(self.base_path):
+            name = item.name
+            if any(skip in name.lower() for skip in ['backup', 'node_modules', 'venv', 'env']):
+                continue
+            projects.append({
+                'name': name,
+                'path': item,
+                'type': detect_project_type(item),
+                'has_git': (item / '.git').exists(),
+                'has_task_list': (item / 'TASK_LIST.md').exists()
+            })
         self.projects = projects
         return projects
-    
-    def detect_project_type(self, project_path):
-        """Detect project type based on files"""
-        files = list(project_path.rglob("*"))
-        file_names = [f.name.lower() for f in files if f.is_file()]
-        
-        if any(name in file_names for name in ['requirements.txt', 'setup.py', 'pyproject.toml', '__init__.py']):
-            return "Python"
-        elif any(name in file_names for name in ['package.json', 'package-lock.json', 'yarn.lock']):
-            return "Node.js"
-        elif any(name in file_names for name in ['composer.json', 'index.php', '.php']):
-            return "PHP"
-        elif any(name in file_names for name in ['pom.xml', 'build.gradle', '.java']):
-            return "Java"
-        elif any(name in file_names for name in ['index.html', 'index.htm', '.html', '.css', '.js']):
-            return "Web"
-        else:
-            return "Unknown"
     
     def create_project_config(self):
         """Create configuration for all projects"""
