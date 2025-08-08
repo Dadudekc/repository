@@ -74,11 +74,11 @@ def install_dependencies():
     print("\n📦 Installing dependencies...")
     
     workspace_root = Path(__file__).parent
-    requirements_path = workspace_root / 'environment' / 'requirements.txt'
+    requirements_path = workspace_root.parent / 'environment' / 'base-requirements.txt'
     venv_path = workspace_root / 'venv'
     
     if not requirements_path.exists():
-        print("❌ requirements.txt not found")
+        print("❌ base-requirements.txt not found")
         return False
     
     # Determine pip command based on OS
@@ -104,7 +104,7 @@ def setup_environment_file():
     print("\n⚙️  Setting up environment configuration...")
     
     workspace_root = Path(__file__).parent
-    env_template = workspace_root / 'environment' / 'env.example'
+    env_template = workspace_root.parent / 'environment' / 'base.env'
     env_file = workspace_root / '.env'
     
     if env_file.exists():
@@ -113,7 +113,7 @@ def setup_environment_file():
     
     if env_template.exists():
         shutil.copy2(env_template, env_file)
-        print("✅ Created .env file from template")
+        print("✅ Created .env file from base.env")
         print("⚠️  IMPORTANT: Edit .env file with your API keys and settings")
         return True
     else:

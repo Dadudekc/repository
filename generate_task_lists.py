@@ -6,11 +6,10 @@ This script creates comprehensive TASK_LIST.md files for all actual repositories
 in the workspace, focusing on beta readiness with environment setup guidance.
 """
 
-import os
-import re
-import json
 from pathlib import Path
 from datetime import datetime
+
+from workspace_utils import get_project_directories, detect_project_type
 
 # Repository categories and their characteristics
 REPOSITORY_CATEGORIES = {
@@ -67,40 +66,6 @@ def categorize_repository(repo_name):
                 return category, config
     
     return 'other', REPOSITORY_CATEGORIES['other']
-
-def detect_project_type(repo_path):
-    """Detect the type of project based on files present"""
-    if not repo_path.exists():
-        return "Unknown"
-    
-    files = list(repo_path.rglob("*"))
-    file_names = [f.name.lower() for f in files if f.is_file()]
-    
-    # Python project
-    if any(name in file_names for name in ['requirements.txt', 'setup.py', 'pyproject.toml', '__init__.py']):
-        return "Python"
-    
-    # Node.js project
-    if any(name in file_names for name in ['package.json', 'package-lock.json', 'yarn.lock']):
-        return "Node.js"
-    
-    # PHP project
-    if any(name in file_names for name in ['composer.json', 'index.php', '.php']):
-        return "PHP"
-    
-    # Java project
-    if any(name in file_names for name in ['pom.xml', 'build.gradle', '.java']):
-        return "Java"
-    
-    # Web project
-    if any(name in file_names for name in ['index.html', 'index.htm', '.html', '.css', '.js']):
-        return "Web"
-    
-    # Documentation
-    if any(name in file_names for name in ['.md', 'readme', 'docs']):
-        return "Documentation"
-    
-    return "Unknown"
 
 def create_beta_ready_task_list(repo_name, category, config, project_type):
     """Create comprehensive beta-ready task list"""
@@ -530,8 +495,7 @@ def main():
     base_path = Path(".")
     
     # Get all directories (repositories)
-    repositories = [d for d in base_path.iterdir() 
-                   if d.is_dir() and not d.name.startswith('.') and d.name != '.git']
+    repositories = get_project_directories(base_path)
     
     print(f"🔍 Found {len(repositories)} repositories")
     
@@ -545,7 +509,7 @@ def main():
             
         # Categorize repository
         category, config = categorize_repository(repo_name)
-        
+
         # Detect project type
         project_type = detect_project_type(repo_path)
         

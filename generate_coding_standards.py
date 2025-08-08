@@ -9,6 +9,8 @@ project structure, code quality, testing, security, and documentation.
 from datetime import datetime
 from pathlib import Path
 
+from workspace_utils import get_project_directories
+
 CONTENT_TEMPLATE = """# Coding & Architecture Standards
 
 ## Design Principles
@@ -47,12 +49,7 @@ CONTENT_TEMPLATE = """# Coding & Architecture Standards
 
 def main() -> None:
     base_path = Path('.')
-    repositories = [
-        d for d in base_path.iterdir()
-        if d.is_dir()
-        and not d.name.startswith('.')
-        and not d.name.startswith('__')
-    ]
+    repositories = get_project_directories(base_path)
 
     date = datetime.now().strftime('%Y-%m-%d')
     for repo in repositories:
