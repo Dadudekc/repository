@@ -3,12 +3,22 @@
 Toolkit for building GPT-driven automation workflows.
 
 ## Environment Setup
-1. Create a virtual environment.
-2. Install dependencies:
-   ```bash
-   pip install -r environment/requirements.txt
-   ```
-3. Copy `environment/env.example` to `.env` and add your API keys.
+Run the automated setup script:
+
+```bash
+python environment/setup.py
+```
+
+This creates a virtual environment, installs dependencies, and copies
+`environment/env.example` to `.env` if it does not already exist.
+
+## Usage
+```python
+from gpt_automation import AutomationEngine
+
+engine = AutomationEngine()
+print(engine.run_prompt("Hello"))
+```
 
 ## Status
-Planning phase with initial environment scaffolding.
+Basic environment automation and core features available.
