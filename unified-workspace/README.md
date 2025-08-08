@@ -66,15 +66,8 @@ unified-workspace/
 git clone https://github.com/Dadudekc/unified-workspace.git
 cd unified-workspace
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate     # Windows
-
-# Install all dependencies
-pip install -r environment/requirements.txt
-pip install -r environment/dev-requirements.txt
+# Run one-command setup
+python setup.py
 ```
 
 ### 2. **Configure Environment**
@@ -99,6 +92,15 @@ python src/main.py
 # Or web apps
 cd projects/web-apps/bolt-project
 npm run dev
+```
+
+### 4. **Use Shared Utilities**
+```python
+from shared.utils import get_setting, setup_logger, APIClient
+
+logger = setup_logger("demo")
+api_key = get_setting("OPENAI_API_KEY")
+client = APIClient("https://api.example.com", api_key)
 ```
 
 ## 🔧 **Environment Configuration**
