@@ -33,12 +33,26 @@
 
 ### **📅 Next Week**
 - [ ] Continue environment setup and core feature work on prioritized repositories
+  - Prioritize `trading-platform`, `gpt-automation`, and `unified-workspace`
+  - Note missing dependencies and update installation scripts
 - [ ] Start basic testing on completed features
+  - Run existing test suites or create minimal tests where absent
+  - Record failures and needed fixes
 - [ ] Document progress
+  - Update READMEs or docs in each active repository
+  - Summarize environment setup status and blockers
 - [ ] Assess overlap between trading bot projects
+  - Compare `trading-platform`, `osrs-bot`, and `tbow-tactics` for shared modules
+  - List components that can be merged or reused
 - [ ] Assess overlap between data management projects
+  - Review `Datgurll` and `machine-learning-project` for redundant utilities
+  - Identify opportunities for unification
 - [ ] Create consolidation plans as needed
+  - Decide which repositories to merge, archive, or standardize
+  - Outline migration steps and responsible parties
 - [ ] Update documentation after consolidation assessment
+  - Reflect consolidation decisions in repository READMEs and this master list
+  - Note next steps for merged projects
 
 ### **🎯 This Month**
 - [ ] Expand setup and testing across additional repositories
@@ -68,6 +82,18 @@
 
 ### unified-workspace
 - Automate environment setup, develop core features, and create documentation
+
+### Cross-Project Consolidation
+
+#### Trading Bot Projects
+- Compare `trading-platform`, `osrs-bot`, and `tbow-tactics` for overlapping functionality
+- Identify shared modules and opportunities for consolidation
+- Recommend next steps for merging, archiving, or modularizing code
+
+#### Data Management Projects
+- Review `Datgurll`, `machine-learning-project`, and `lstm-model-trainer` for redundant data handling tools
+- Determine feasibility of a unified data management repository
+- Document consolidation or standardization plans
 
 ## 🛠️ **Development Standards**
 
